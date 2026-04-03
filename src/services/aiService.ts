@@ -19,7 +19,9 @@ export interface ExplainMortgageInput {
 
 function buildUserPrompt(input: ExplainMortgageInput): string {
   const trackName = TRACK_LABELS[input.track]
-  return `אתה יועץ משכנתא ישראלי מנוסה.
+  return `חשוב מאוד: כתוב את כל התשובה בעברית בלבד. אל תשתמש בשום מילה בערבית, אנגלית או שפה אחרת.
+
+אתה יועץ משכנתא ישראלי מנוסה.
 הסבר בעברית פשוטה וברורה את המשכנתא הבאה:
 סכום: ${formatCurrency(input.amount)}
 תקופה: ${input.years} שנה
