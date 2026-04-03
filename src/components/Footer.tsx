@@ -11,7 +11,16 @@ export function Footer() {
       </p>
       <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
         <Link to="/privacy" className="text-mash-navy underline-offset-2 hover:underline">
-          פרטיות
+          מדיניות פרטיות
+        </Link>
+        <span aria-hidden="true" className="text-slate-300">
+          |
+        </span>
+        <Link
+          to="/accessibility"
+          className="text-mash-navy underline-offset-2 hover:underline"
+        >
+          הצהרת נגישות
         </Link>
         <span aria-hidden="true" className="text-slate-300">
           |

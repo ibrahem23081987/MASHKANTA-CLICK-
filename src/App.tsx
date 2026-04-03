@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { AccessibilityWidget } from './components/AccessibilityWidget'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
@@ -7,7 +8,8 @@ import { Result } from './pages/Result'
 import { Article } from './pages/Article'
 import { Articles } from './pages/Articles'
 import { Contact } from './pages/Contact'
-import { Privacy } from './pages/Privacy'
+import { PrivacyPage } from './pages/PrivacyPage'
+import { AccessibilityPage } from './pages/AccessibilityPage'
 import { Terms } from './pages/Terms'
 
 export default function App() {
@@ -23,12 +25,14 @@ export default function App() {
             <Route path="/article/:slug" element={<Article />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />
+        <AccessibilityWidget />
       </div>
     </BrowserRouter>
   )

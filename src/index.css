@@ -14,3 +14,39 @@
     @apply bg-slate-50 text-slate-900 antialiased;
   }
 }
+
+/* נגישות — מופעל ע״י AccessibilityWidget */
+html[data-a11y-font="1"] {
+  font-size: 112.5%;
+}
+html[data-a11y-font="2"] {
+  font-size: 125%;
+}
+
+html.a11y-high-contrast body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+html.a11y-high-contrast .bg-white,
+html.a11y-high-contrast .bg-slate-50 {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+}
+html.a11y-high-contrast .text-slate-600,
+html.a11y-high-contrast .text-slate-500,
+html.a11y-high-contrast .text-slate-700 {
+  color: #e5e5e5 !important;
+}
+html.a11y-high-contrast .text-mash-navy,
+html.a11y-high-contrast .border-mash-navy {
+  color: #f0b429 !important;
+  border-color: #f0b429 !important;
+}
+html.a11y-high-contrast a {
+  color: #7dd3fc !important;
+}
+
+html.a11y-links-underline a {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
