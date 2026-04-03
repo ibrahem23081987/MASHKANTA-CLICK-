@@ -113,17 +113,10 @@ export function Result() {
 
         <ResultCard title="כמה דירה אתה יכול לקנות?" delay={0.12}>
           <p className="text-lg leading-relaxed text-slate-800">
-            עם משכורת {formatCurrency(state.salary)} והון עצמי{' '}
-            {formatCurrency(state.equity)}
-            <br />
-            אתה יכול לרכוש דירה עד{' '}
+            לפי הנתונים שהזנת, מחיר הדירה הוא{' '}
             <span className="font-bold text-mash-navy">
-              {formatCurrency(state.maxHomePrice)}
+              {formatCurrency(state.amount + state.equity)}
             </span>
-          </p>
-          <p className="mt-2 text-xs text-slate-500">
-            לפי נוסחת האתר: הלוואה מקסימלית = משכורת × 30% × 12 × שנים; מחיר
-            דירה = הון עצמי + הלוואה מקסימלית
           </p>
         </ResultCard>
 
